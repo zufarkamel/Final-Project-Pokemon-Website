@@ -1,4 +1,4 @@
-import React, { useEffect, useImperativeHandle, useState } from 'react';
+import React, { useState } from 'react';
 import axios from "axios";
 import './App.css';
 
@@ -44,7 +44,7 @@ const handleSubmit = (e) => {
       {pokemonData.map((data) => {
         return(
           <div className="container">
-            <img src={data.sprites["front_default"]} />
+            <img src={data.sprites["front_default"]} alt="Pokemon" />
             <div className="divTable">
               <div className="divTableBody">
               <div className="divTableRow">
